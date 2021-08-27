@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT-Score_counter</title>
+    <link rel="icon" href="table.ico">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+
+        .container {
+            background: black;
+            width: 600px;
+            height: 600px;
+            border: 3px solid rgb(170, 255, 85);
+            margin: auto;
+            margin-top: 25px;
+            border-radius: 20px;
+            box-shadow: 0 1.5px 30px 2px green;
+        }
+
+        #tt-bat {
+            width: 300px;
+            height: 300px;
+            padding-left: 160px;
+        }
+
+        #line {
+            position: relative;
+            bottom: 10px;
+            border: 1px solid red;
+        }
+
+        .title {
+            position: relative;
+            bottom: 15px;
+            color: rgb(0, 235, 252);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #first,
+        #second,
+        #third {
+            height: 50px;
+            width: 160px;
+            margin-top: 50px;
+            margin-left: 30px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0 1.5px 10px 2px rgb(12, 219, 226);
+        }
+
+        #first {
+            background-color: rgb(253, 47, 236);
+        }
+
+        #second {
+            background-color: mediumblue;
+        }
+
+        #third {
+            background-color: orangered;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: -10px;
+            font-size: 40px;
+        }
+
+        #maximum {
+            color: white;
+            margin-left: 130px;
+            font-size: 30px;
+        }
+
+        #plyto {
+            background-color: rgb(251, 255, 2);
+            color: rgb(0, 0, 0);
+            border-radius: 30px;
+            padding: 10px;
+            margin-left: 275px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="animated-removebg-preview.png" alt="" id="tt-bat">
+        <div class="title">Ping Pong Score Counter</div>
+        <div id="line"></div>
+        <h1> <span id="p1"> 0 </span> to <span id="p2"> 0 </span></h1>
+        <div id="maximum">Select The Maximum Score</div>
+        <select name="" id="plyto">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <div class="buttons">
+            <button id="first">+1 Player-1</button>
+            <button id="second">+1 Player-2</button>
+            <button id="third">Reset</button>
+        </div>
+    </div>
+    <script src="pingpong.js"></script>
+</body>
+
+</html>
